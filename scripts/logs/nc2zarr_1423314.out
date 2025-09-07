@@ -1,0 +1,4 @@
+zarr: 2.18.3
+xarray: 2025.6.1
+numcodecs: 0.13.1
+Wrote: /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr

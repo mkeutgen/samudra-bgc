@@ -1,0 +1,17 @@
+2025-09-05 22:46:12,105 - INFO - | distributed init (rank 0), gpu 0, world_size 4, dist_url env://
+2025-09-05 22:46:12,379 - INFO - | distributed init (rank 1), gpu 1, world_size 4, dist_url env://
+tiger-i04g1:179600:179600 [0] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:179600:179600 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:179600:179600 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.19.3+cuda12.3
+tiger-i04g1:179601:179601 [1] NCCL INFO cudaDriverVersion 13000
+tiger-i04g1:179601:179601 [1] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:179601:179601 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:179600:179653 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:179600:179653 [0] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:179600:179653 [0] NCCL INFO Using network IB
+tiger-i04g1:179601:179654 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:179601:179654 [1] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:179601:179654 [1] NCCL INFO Using network IB
+tiger-i04g1:179600:179653 [0] NCCL INFO DMA-BUF is available on GPU device 0
+tiger-i04g1:179601:179654 [1] NCCL INFO DMA-BUF is available on GPU device 1

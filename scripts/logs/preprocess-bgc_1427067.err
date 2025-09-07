@@ -1,0 +1,5 @@
+INFO: Opening input Zarr: /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr
+INFO: Selecting first 9 years (3285 steps)
+INFO: Interpolating staggered variables (if present) to tracer grid...
+/var/spool/slurmd/job1427067/slurm_script: line 20: 2467872 Killed                  python preprocess_bgc.py --input /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr --output /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/processed_data --years 9
+slurmstepd: error: Detected 1 oom_kill event in StepId=1427067.batch. Some of the step tasks have been OOM Killed.

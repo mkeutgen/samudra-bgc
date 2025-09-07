@@ -1,0 +1,86 @@
+2025-09-07 16:24:23,652 - INFO - | distributed init (rank 1), gpu 0, world_size 2, dist_url env://
+2025-09-07 16:24:23,652 - INFO - | distributed init (rank 0), gpu 0, world_size 2, dist_url env://
+tiger-i04g11:299619:299619 [0] NCCL INFO Bootstrap : Using ib0:10.36.54.50<0>
+tiger-i04g11:299619:299619 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g11:299619:299619 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.19.3+cuda12.3
+tiger-i04g6:311375:311375 [0] NCCL INFO cudaDriverVersion 13000
+tiger-i04g6:311375:311375 [0] NCCL INFO Bootstrap : Using ib0:10.36.54.45<0>
+tiger-i04g6:311375:311375 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g6:311375:311398 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.45<0>
+tiger-i04g6:311375:311398 [0] NCCL INFO Using non-device net plugin version 0
+tiger-i04g6:311375:311398 [0] NCCL INFO Using network IB
+tiger-i04g6:311375:311398 [0] NCCL INFO DMA-BUF is available on GPU device 0
+tiger-i04g11:299619:299635 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.50<0>
+tiger-i04g11:299619:299635 [0] NCCL INFO Using non-device net plugin version 0
+tiger-i04g11:299619:299635 [0] NCCL INFO Using network IB
+tiger-i04g11:299619:299635 [0] NCCL INFO DMA-BUF is available on GPU device 0
+tiger-i04g6:311375:311398 [0] NCCL INFO comm 0x8d09b40 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId ae000 commId 0x8a600338436a8233 - Init START
+tiger-i04g11:299619:299635 [0] NCCL INFO comm 0x8f93c90 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId ae000 commId 0x8a600338436a8233 - Init START
+tiger-i04g6:311375:311398 [0] NCCL INFO Setting affinity for GPU 0 to aaaaaaaa,aaaaaaaa
+tiger-i04g11:299619:299635 [0] NCCL INFO Setting affinity for GPU 0 to aaaa,aaaaaaa0,00000000,000aaaaa
+tiger-i04g6:311375:311398 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+tiger-i04g6:311375:311398 [0] NCCL INFO P2P Chunksize set to 131072
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 00/02 :    0   1
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 01/02 :    0   1
+tiger-i04g11:299619:299635 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+tiger-i04g11:299619:299635 [0] NCCL INFO P2P Chunksize set to 131072
+tiger-i04g6:311375:311398 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+tiger-i04g6:311375:311398 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+tiger-i04g6:311375:311398 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/IB/0
+tiger-i04g6:311375:311398 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/IB/0
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+tiger-i04g11:299619:299635 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/0
+tiger-i04g6:311375:311398 [0] NCCL INFO Connected all rings
+tiger-i04g6:311375:311398 [0] NCCL INFO Connected all trees
+tiger-i04g6:311375:311398 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+tiger-i04g6:311375:311398 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+tiger-i04g11:299619:299635 [0] NCCL INFO Connected all rings
+tiger-i04g11:299619:299635 [0] NCCL INFO Connected all trees
+tiger-i04g11:299619:299635 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+tiger-i04g11:299619:299635 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+tiger-i04g6:311375:311398 [0] NCCL INFO comm 0x8d09b40 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId ae000 commId 0x8a600338436a8233 - Init COMPLETE
+tiger-i04g11:299619:299635 [0] NCCL INFO comm 0x8f93c90 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId ae000 commId 0x8a600338436a8233 - Init COMPLETE
+2025-09-07 16:24:24,052 - INFO - Prognostic variables: CT_0, CT_1, CT_2, CT_3, CT_4, CT_5, CT_6, CT_7, CT_8, CT_9, CT_10, CT_11, CT_12, CT_13, CT_14, CT_15, CT_16, CT_17, CT_18, CT_19, CT_20, CT_21, CT_22, CT_23, CT_24, CT_25, CT_26, CT_27, CT_28, CT_29, CT_30, CT_31, CT_32, CT_33, CT_34, CT_35, CT_36, CT_37, CT_38, CT_39, CT_40, CT_41, CT_42, CT_43, SA_0, SA_1, SA_2, SA_3, SA_4, SA_5, SA_6, SA_7, SA_8, SA_9, SA_10, SA_11, SA_12, SA_13, SA_14, SA_15, SA_16, SA_17, SA_18, SA_19, SA_20, SA_21, SA_22, SA_23, SA_24, SA_25, SA_26, SA_27, SA_28, SA_29, SA_30, SA_31, SA_32, SA_33, SA_34, SA_35, SA_36, SA_37, SA_38, SA_39, SA_40, SA_41, SA_42, SA_43, o2_0, o2_1, o2_2, o2_3, o2_4, o2_5, o2_6, o2_7, o2_8, o2_9, o2_10, o2_11, o2_12, o2_13, o2_14, o2_15, o2_16, o2_17, o2_18, o2_19, o2_20, o2_21, o2_22, o2_23, o2_24, o2_25, o2_26, o2_27, o2_28, o2_29, o2_30, o2_31, o2_32, o2_33, o2_34, o2_35, o2_36, o2_37, o2_38, o2_39, o2_40, o2_41, o2_42, o2_43, dic_0, dic_1, dic_2, dic_3, dic_4, dic_5, dic_6, dic_7, dic_8, dic_9, dic_10, dic_11, dic_12, dic_13, dic_14, dic_15, dic_16, dic_17, dic_18, dic_19, dic_20, dic_21, dic_22, dic_23, dic_24, dic_25, dic_26, dic_27, dic_28, dic_29, dic_30, dic_31, dic_32, dic_33, dic_34, dic_35, dic_36, dic_37, dic_38, dic_39, dic_40, dic_41, dic_42, dic_43
+2025-09-07 16:24:24,052 - INFO - Boundary variables: tauuo, tauvo, Qnet
+2025-09-07 16:24:24,052 - INFO - Levels: 44
+2025-09-07 16:24:24,063 - INFO - Number of inputs: (hist + 1) * prognostic_vars + boundary_vars = 355
+2025-09-07 16:24:24,064 - INFO - Number of outputs: (hist + 1) * prognostic_vars = 352
+2025-09-07 16:24:24,064 - INFO - Loading data
+2025-09-07 16:24:25,055 - INFO - Instantiating model samudra_bgc
+[16:24:25.077216] SamudraBGC init - Wet mask shape: torch.Size([352, 270, 180])
+[16:24:25.077271] Expected spatial dims based on data: y=270, x=180
+2025-09-07 16:24:29,314 - INFO - Loss = mse
+2025-09-07 16:24:31,041 - INFO - Inference will use input at time 2024-01-01T00:00:00.000000000 and produce output at 2024-01-03T00:00:00.000000000
+2025-09-07 16:24:31,055 - INFO - Starting training at step 4
+2025-09-07 16:24:32,725 - INFO - Instantiating torch loaders
+2025-09-07 16:26:37,030 - ERROR - An error occurred: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 5.38 MiB is free. Including non-PyTorch memory, this process has 44.38 GiB memory in use. Of the allocated memory 43.54 GiB is allocated by PyTorch, and 200.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-09-07 16:26:37,048 - ERROR - Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 624, in main
+    trainer.run()
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 306, in run
+    train_loss = self.train_one_epoch(epoch)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 359, in train_one_epoch
+    TO.loss.backward()
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 5.38 MiB is free. Including non-PyTorch memory, this process has 44.38 GiB memory in use. Of the allocated memory 43.54 GiB is allocated by PyTorch, and 200.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+2025-09-07 16:26:37,193 - ERROR - An error occurred: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 25.38 MiB is free. Including non-PyTorch memory, this process has 44.36 GiB memory in use. Of the allocated memory 43.54 GiB is allocated by PyTorch, and 180.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-09-07 16:26:37,198 - ERROR - Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 624, in main
+    trainer.run()
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 306, in run
+    train_loss = self.train_one_epoch(epoch)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 359, in train_one_epoch
+    TO.loss.backward()
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 25.38 MiB is free. Including non-PyTorch memory, this process has 44.36 GiB memory in use. Of the allocated memory 43.54 GiB is allocated by PyTorch, and 180.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+

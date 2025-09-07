@@ -1,0 +1,98 @@
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 631, in <module>
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 631, in <module>
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 631, in <module>
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 631, in <module>
+    main()
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 621, in main
+    trainer = Trainer(cfg)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 126, in __init__
+        self.data, self.data_mean, self.data_std = validate_data(main()
+
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/utils/data.py", line 163, in validate_data
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 621, in main
+    trainer = Trainer(cfg)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 126, in __init__
+        self.data, self.data_mean, self.data_std = validate_data(main()
+
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/utils/data.py", line 163, in validate_data
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 621, in main
+        main()trainer = Trainer(cfg)
+
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 621, in main
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 126, in __init__
+    self.data, self.data_mean, self.data_std = validate_data(
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/utils/data.py", line 163, in validate_data
+    trainer = Trainer(cfg)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/train.py", line 126, in __init__
+    self.data, self.data_mean, self.data_std = validate_data(
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/utils/data.py", line 163, in validate_data
+    tensor_map = TensorMap.get_instance()
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/constants.py", line 168, in get_instance
+    tensor_map = TensorMap.get_instance()    
+    tensor_map = TensorMap.get_instance()  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/constants.py", line 168, in get_instance
+tensor_map = TensorMap.get_instance()
+
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/constants.py", line 168, in get_instance
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/src/constants.py", line 168, in get_instance
+            raise ValueError("TensorMap not initialized")raise ValueError("TensorMap not initialized")raise ValueError("TensorMap not initialized")
+
+
+ValueErrorValueErrorValueError:     : : TensorMap not initializedraise ValueError("TensorMap not initialized")TensorMap not initializedTensorMap not initialized
+
+
+
+ValueError: TensorMap not initialized
+[2025-09-05 22:01:26,832] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 163186) of binary: /home/mk0964/.conda/envs/samudra/bin/python
+Traceback (most recent call last):
+  File "/home/mk0964/.conda/envs/samudra/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-09-05_22:01:26
+  host      : tiger-i04g1
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 163187)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-09-05_22:01:26
+  host      : tiger-i04g1
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 163188)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-09-05_22:01:26
+  host      : tiger-i04g1
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 163189)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-09-05_22:01:26
+  host      : tiger-i04g1
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 163186)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

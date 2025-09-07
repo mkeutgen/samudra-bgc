@@ -1,0 +1,40 @@
+INFO: Opening input Zarr: /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr
+INFO: Selecting first 9 years (3285 steps)
+INFO: Interpolating staggered variables (if present) to tracer grid...
+INFO:   u: xq -> xh interp done
+INFO:   v: yq -> yh interp done
+INFO:   taux: xq -> xh interp done
+INFO:   tauy: yq -> yh interp done
+INFO: Renaming variables: {'u': 'uo', 'v': 'vo', 'taux': 'tauuo', 'tauy': 'tauvo'}
+INFO: Renaming dimensions for Samudra compatibility...
+INFO: Renaming dimensions: {'yh': 'y', 'xh': 'x', 'z_l': 'lev'}
+INFO: Building closed-basin masks with boundary_width=1
+INFO: Writing Zarr v2 -> /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/processed_data/bgc_data.zarr
+/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py:187: FutureWarning: zarr_version is deprecated, use zarr_format
+  ds32.to_zarr(store, mode="w", consolidated=False, zarr_version=2, encoding=enc)
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 309, in <module>
+    prepare_idealized_bgc_data(
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 287, in prepare_idealized_bgc_data
+    write_zarr_v2(ds_out, data_store, clevel=clevel)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 187, in write_zarr_v2
+    ds32.to_zarr(store, mode="w", consolidated=False, zarr_version=2, encoding=enc)
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/core/dataset.py", line 2621, in to_zarr
+    return to_zarr(  # type: ignore[call-overload,misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/api.py", line 2184, in to_zarr
+    dump_to_store(dataset, zstore, writer, encoding=encoding)
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/api.py", line 1920, in dump_to_store
+    store.store(variables, attrs, check_encoding, writer, unlimited_dims=unlimited_dims)
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 965, in store
+    self.set_variables(
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 1139, in set_variables
+    zarr_array = self._create_new_array(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 1031, in _create_new_array
+    zarr_array = self.zarr_group.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/zarr/core/group.py", line 2443, in create
+    return self.create_array(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Group.create_array() got an unexpected keyword argument 'exists_ok'

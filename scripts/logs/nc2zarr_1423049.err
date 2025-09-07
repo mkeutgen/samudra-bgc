@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/nc_to_zarr.py", line 11, in <module>
+    ds = xr.open_mfdataset(
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/xarray/backends/api.py", line 1020, in open_mfdataset
+    datasets, closers = dask.compute(datasets, closers)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/dask/base.py", line 661, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/xarray/backends/api.py", line 556, in open_dataset
+    backend = plugins.get_backend(engine)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/xarray/backends/plugins.py", line 205, in get_backend
+    raise ValueError(
+ValueError: unrecognized engine netcdf4 must be one of: ['scipy', 'store', 'zarr']

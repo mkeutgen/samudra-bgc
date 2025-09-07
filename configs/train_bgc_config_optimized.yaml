@@ -1,0 +1,91 @@
+debug: false
+disk_mode: true
+pin_mem: true
+save_freq: 10  # Save checkpoints every 10 epochs
+epochs: 3    # Total training epochs
+batch_size: 2  # Can be larger for rectangular domain
+learning_rate: 0.0002
+scheduler: true
+loss: mse
+inference_epochs: [-1]  # Perform inference at every epoch
+
+# Training time range (first 7 years of idealized simulation)
+# Adjust dates based on your actual simulation start
+train:
+  start_time: "2016-01-01"  # Idealized simulations often start from year 1
+  end_time: "2022-12-31"    # ~7 years for training
+
+# Validation time range (year 8)  
+val:
+  start_time: "2023-01-01"
+  end_time: "2023-12-31"
+
+# Inference/test time range (year 9)
+inference:
+  - start_time: "2024-01-01"
+    end_time: "2024-12-31"
+
+data_stride: [1]
+steps: [4, 8, 16]  # Multi-step training schedule for idealized case
+step_transition: [25, 50]  # Transition at epochs 25 and 50
+
+distributed:
+  enabled: true
+  dist_url: null
+  world_size: null
+  rank: null
+  gpu: null
+  dist_backend: null
+
+experiment:
+  name: train
+  sub_name: idealized_na_bgc
+  rand_seed: 42
+  base_output_dir: train_idealized_bgc
+  data_dir: /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/processed_data  # I UPDATED THIS
+  network: samudra_bgc
+  prognostic_vars_key: phys_bgc  # CT, SA, o2, dic
+  boundary_vars_key: wind_heat   # Wind stress + heat flux for double gyre
+
+data:
+  data_path: bgc_data.zarr
+  data_means_path: bgc_means.zarr
+  data_stds_path: bgc_stds.zarr
+  time_delta: 1  # Daily data
+  num_workers: 16 # I'm trying 16 for the fast one
+  hist: 1  # Use 1 previous timestep as history
+
+unet:
+  # Updated for 44 depth levels WITHOUT zos
+  ch_width: [355, 512, 640, 768, 1024]  # Input: (1+1)*176 + 3 = 355
+  n_out: 352  # Output: (1+1)*176 = 352
+  dilation: [1, 2, 4, 8]
+  n_layers: [1, 1, 1, 1] # use only 1 layer, like Samudra OG
+  last_kernel_size: 3
+  pad: "replicate"
+
+  core_block:
+    block_type: "conv_next_block"
+    kernel_size: 3
+    activation: "capped_gelu"
+    upscale_factor: 4
+    norm: "batch"
+
+  down_sampling_block: "avg_pool"
+  up_sampling_block: "bilinear_upsample"
+
+  # Empty corrector (disabled)
+  corrector:
+    non_negative_corrector_names: []
+
+
+  # Ensure non-negative values for concentrations (DISABLED for 1st try)
+  #corrector:
+  #  non_negative_corrector_names: ["o2", "dic", "chl", "pp"]
+
+# Special settings for idealized configuration
+# idealized:
+#   periodic_bc: false  # Periodic boundary conditions in x
+#   closed_basin: true  # False for open boundaries in y
+#   grid_type: "rectangular"
+#   domain: "north_atlantic_double_gyre"

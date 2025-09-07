@@ -1,0 +1,21 @@
+
+EnvironmentNameNotFound: Could not find conda environment: samuddra
+You can list all discoverable environments with `conda info --envs`.
+
+
+INFO:root:Loading idealized dataset from /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 338, in <module>
+    prepare_idealized_bgc_data(args.input, args.output, args.years, domain_config)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 231, in prepare_idealized_bgc_data
+    ds = xr.open_zarr(input_path, chunks={'time': 31})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/licensed/anaconda3/2024.10/lib/python3.12/site-packages/xarray/backends/zarr.py", line 867, in open_zarr
+    ds = open_dataset(
+         ^^^^^^^^^^^^^
+  File "/usr/licensed/anaconda3/2024.10/lib/python3.12/site-packages/xarray/backends/api.py", line 552, in open_dataset
+    backend = plugins.get_backend(engine)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/licensed/anaconda3/2024.10/lib/python3.12/site-packages/xarray/backends/plugins.py", line 205, in get_backend
+    raise ValueError(
+ValueError: unrecognized engine zarr must be one of: ['scipy', 'store']

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 10, in <module>
+    import xarray as xr
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/xarray/__init__.py", line 1, in <module>
+    from xarray import testing, tutorial
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/xarray/testing.py", line 8, in <module>
+    import pandas as pd
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/pandas/core/api.py", line 1, in <module>
+    from pandas._libs import (
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/pandas/_libs/__init__.py", line 18, in <module>
+    from pandas._libs.interval import Interval
+  File "interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject

@@ -1,0 +1,306 @@
+INFO:root:Loading idealized dataset from /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/ds_mini.zarr
+/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py:231: UserWarning: The specified chunks separate the stored chunks along dimension "time" starting at index 31. This could degrade performance. Instead, consider rechunking after loading.
+  ds = xr.open_zarr(input_path, chunks={'time': 31})
+/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py:234: FutureWarning: The return type of `Dataset.dims` will be changed to return a set of dimension names in future, in order to be more consistent with `DataArray.dims`. To access a mapping from dimension names to lengths, please use `Dataset.sizes`.
+  logging.info(f"Dataset dimensions: {dict(ds.dims)}")
+INFO:root:Dataset dimensions: {'time': 3650, 'z_l': 44, 'yh': 270, 'xh': 180, 'xq': 363, 'yq': 363}
+INFO:root:Grid size: 270 x 180 x 44
+INFO:root:Selecting first 9 years (3285 time steps)
+INFO:root:Handling staggered grid for velocities...
+INFO:root:Interpolated u velocity to tracer points
+INFO:root:Interpolated v velocity to tracer points
+INFO:root:Renamed taux to tauuo
+INFO:root:Renamed tauy to tauvo
+INFO:root:Renamed u to uo
+INFO:root:Renamed v to vo
+INFO:root:Creating masks for idealized domain...
+INFO:root:Reformatting variables for Samudra...
+INFO:root:Created CT_0
+INFO:root:Created CT_1
+INFO:root:Created CT_2
+INFO:root:Created CT_3
+INFO:root:Created CT_4
+INFO:root:Created CT_5
+INFO:root:Created CT_6
+INFO:root:Created CT_7
+INFO:root:Created CT_8
+INFO:root:Created CT_9
+INFO:root:Created CT_10
+INFO:root:Created CT_11
+INFO:root:Created CT_12
+INFO:root:Created CT_13
+INFO:root:Created CT_14
+INFO:root:Created CT_15
+INFO:root:Created CT_16
+INFO:root:Created CT_17
+INFO:root:Created CT_18
+INFO:root:Created CT_19
+INFO:root:Created CT_20
+INFO:root:Created CT_21
+INFO:root:Created CT_22
+INFO:root:Created CT_23
+INFO:root:Created CT_24
+INFO:root:Created CT_25
+INFO:root:Created CT_26
+INFO:root:Created CT_27
+INFO:root:Created CT_28
+INFO:root:Created CT_29
+INFO:root:Created CT_30
+INFO:root:Created CT_31
+INFO:root:Created CT_32
+INFO:root:Created CT_33
+INFO:root:Created CT_34
+INFO:root:Created CT_35
+INFO:root:Created CT_36
+INFO:root:Created CT_37
+INFO:root:Created CT_38
+INFO:root:Created CT_39
+INFO:root:Created CT_40
+INFO:root:Created CT_41
+INFO:root:Created CT_42
+INFO:root:Created CT_43
+INFO:root:Created SA_0
+INFO:root:Created SA_1
+INFO:root:Created SA_2
+INFO:root:Created SA_3
+INFO:root:Created SA_4
+INFO:root:Created SA_5
+INFO:root:Created SA_6
+INFO:root:Created SA_7
+INFO:root:Created SA_8
+INFO:root:Created SA_9
+INFO:root:Created SA_10
+INFO:root:Created SA_11
+INFO:root:Created SA_12
+INFO:root:Created SA_13
+INFO:root:Created SA_14
+INFO:root:Created SA_15
+INFO:root:Created SA_16
+INFO:root:Created SA_17
+INFO:root:Created SA_18
+INFO:root:Created SA_19
+INFO:root:Created SA_20
+INFO:root:Created SA_21
+INFO:root:Created SA_22
+INFO:root:Created SA_23
+INFO:root:Created SA_24
+INFO:root:Created SA_25
+INFO:root:Created SA_26
+INFO:root:Created SA_27
+INFO:root:Created SA_28
+INFO:root:Created SA_29
+INFO:root:Created SA_30
+INFO:root:Created SA_31
+INFO:root:Created SA_32
+INFO:root:Created SA_33
+INFO:root:Created SA_34
+INFO:root:Created SA_35
+INFO:root:Created SA_36
+INFO:root:Created SA_37
+INFO:root:Created SA_38
+INFO:root:Created SA_39
+INFO:root:Created SA_40
+INFO:root:Created SA_41
+INFO:root:Created SA_42
+INFO:root:Created SA_43
+INFO:root:Created o2_0
+INFO:root:Created o2_1
+INFO:root:Created o2_2
+INFO:root:Created o2_3
+INFO:root:Created o2_4
+INFO:root:Created o2_5
+INFO:root:Created o2_6
+INFO:root:Created o2_7
+INFO:root:Created o2_8
+INFO:root:Created o2_9
+INFO:root:Created o2_10
+INFO:root:Created o2_11
+INFO:root:Created o2_12
+INFO:root:Created o2_13
+INFO:root:Created o2_14
+INFO:root:Created o2_15
+INFO:root:Created o2_16
+INFO:root:Created o2_17
+INFO:root:Created o2_18
+INFO:root:Created o2_19
+INFO:root:Created o2_20
+INFO:root:Created o2_21
+INFO:root:Created o2_22
+INFO:root:Created o2_23
+INFO:root:Created o2_24
+INFO:root:Created o2_25
+INFO:root:Created o2_26
+INFO:root:Created o2_27
+INFO:root:Created o2_28
+INFO:root:Created o2_29
+INFO:root:Created o2_30
+INFO:root:Created o2_31
+INFO:root:Created o2_32
+INFO:root:Created o2_33
+INFO:root:Created o2_34
+INFO:root:Created o2_35
+INFO:root:Created o2_36
+INFO:root:Created o2_37
+INFO:root:Created o2_38
+INFO:root:Created o2_39
+INFO:root:Created o2_40
+INFO:root:Created o2_41
+INFO:root:Created o2_42
+INFO:root:Created o2_43
+INFO:root:Created dic_0
+INFO:root:Created dic_1
+INFO:root:Created dic_2
+INFO:root:Created dic_3
+INFO:root:Created dic_4
+INFO:root:Created dic_5
+INFO:root:Created dic_6
+INFO:root:Created dic_7
+INFO:root:Created dic_8
+INFO:root:Created dic_9
+INFO:root:Created dic_10
+INFO:root:Created dic_11
+INFO:root:Created dic_12
+INFO:root:Created dic_13
+INFO:root:Created dic_14
+INFO:root:Created dic_15
+INFO:root:Created dic_16
+INFO:root:Created dic_17
+INFO:root:Created dic_18
+INFO:root:Created dic_19
+INFO:root:Created dic_20
+INFO:root:Created dic_21
+INFO:root:Created dic_22
+INFO:root:Created dic_23
+INFO:root:Created dic_24
+INFO:root:Created dic_25
+INFO:root:Created dic_26
+INFO:root:Created dic_27
+INFO:root:Created dic_28
+INFO:root:Created dic_29
+INFO:root:Created dic_30
+INFO:root:Created dic_31
+INFO:root:Created dic_32
+INFO:root:Created dic_33
+INFO:root:Created dic_34
+INFO:root:Created dic_35
+INFO:root:Created dic_36
+INFO:root:Created dic_37
+INFO:root:Created dic_38
+INFO:root:Created dic_39
+INFO:root:Created dic_40
+INFO:root:Created dic_41
+INFO:root:Created dic_42
+INFO:root:Created dic_43
+INFO:root:Created chl_0
+INFO:root:Created chl_1
+INFO:root:Created chl_2
+INFO:root:Created chl_3
+INFO:root:Created chl_4
+INFO:root:Created chl_5
+INFO:root:Created chl_6
+INFO:root:Created chl_7
+INFO:root:Created chl_8
+INFO:root:Created chl_9
+INFO:root:Created chl_10
+INFO:root:Created chl_11
+INFO:root:Created chl_12
+INFO:root:Created chl_13
+INFO:root:Created chl_14
+INFO:root:Created chl_15
+INFO:root:Created chl_16
+INFO:root:Created chl_17
+INFO:root:Created chl_18
+INFO:root:Created chl_19
+INFO:root:Created chl_20
+INFO:root:Created chl_21
+INFO:root:Created chl_22
+INFO:root:Created chl_23
+INFO:root:Created chl_24
+INFO:root:Created chl_25
+INFO:root:Created chl_26
+INFO:root:Created chl_27
+INFO:root:Created chl_28
+INFO:root:Created chl_29
+INFO:root:Created chl_30
+INFO:root:Created chl_31
+INFO:root:Created chl_32
+INFO:root:Created chl_33
+INFO:root:Created chl_34
+INFO:root:Created chl_35
+INFO:root:Created chl_36
+INFO:root:Created chl_37
+INFO:root:Created chl_38
+INFO:root:Created chl_39
+INFO:root:Created chl_40
+INFO:root:Created chl_41
+INFO:root:Created chl_42
+INFO:root:Created chl_43
+INFO:root:Created pp_0
+INFO:root:Created pp_1
+INFO:root:Created pp_2
+INFO:root:Created pp_3
+INFO:root:Created pp_4
+INFO:root:Created pp_5
+INFO:root:Created pp_6
+INFO:root:Created pp_7
+INFO:root:Created pp_8
+INFO:root:Created pp_9
+INFO:root:Created pp_10
+INFO:root:Created pp_11
+INFO:root:Created pp_12
+INFO:root:Created pp_13
+INFO:root:Created pp_14
+INFO:root:Created pp_15
+INFO:root:Created pp_16
+INFO:root:Created pp_17
+INFO:root:Created pp_18
+INFO:root:Created pp_19
+INFO:root:Created pp_20
+INFO:root:Created pp_21
+INFO:root:Created pp_22
+INFO:root:Created pp_23
+INFO:root:Created pp_24
+INFO:root:Created pp_25
+INFO:root:Created pp_26
+INFO:root:Created pp_27
+INFO:root:Created pp_28
+INFO:root:Created pp_29
+INFO:root:Created pp_30
+INFO:root:Created pp_31
+INFO:root:Created pp_32
+INFO:root:Created pp_33
+INFO:root:Created pp_34
+INFO:root:Created pp_35
+INFO:root:Created pp_36
+INFO:root:Created pp_37
+INFO:root:Created pp_38
+INFO:root:Created pp_39
+INFO:root:Created pp_40
+INFO:root:Created pp_41
+INFO:root:Created pp_42
+INFO:root:Created pp_43
+INFO:root:Saving processed data to /scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/prototypes_dataset/processed_data/bgc_data.zarr
+Traceback (most recent call last):
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 338, in <module>
+    prepare_idealized_bgc_data(args.input, args.output, args.years, domain_config)
+  File "/scratch/gpfs/GEOCLIM/LRGROUP/maximek/INMOS/samudra-bgc/scripts/preprocess_bgc.py", line 297, in prepare_idealized_bgc_data
+    ds.to_zarr(output_path, mode='w')
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/core/dataset.py", line 2621, in to_zarr
+    return to_zarr(  # type: ignore[call-overload,misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/api.py", line 2184, in to_zarr
+    dump_to_store(dataset, zstore, writer, encoding=encoding)
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/api.py", line 1920, in dump_to_store
+    store.store(variables, attrs, check_encoding, writer, unlimited_dims=unlimited_dims)
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 965, in store
+    self.set_variables(
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 1139, in set_variables
+    zarr_array = self._create_new_array(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/xarray/backends/zarr.py", line 1031, in _create_new_array
+    zarr_array = self.zarr_group.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mk0964/.conda/envs/myenv/lib/python3.12/site-packages/zarr/core/group.py", line 2443, in create
+    return self.create_array(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Group.create_array() got an unexpected keyword argument 'exists_ok'

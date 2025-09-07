@@ -1,0 +1,350 @@
+2025-09-07 09:37:32,045 - INFO - | distributed init (rank 0), gpu 0, world_size 4, dist_url env://
+2025-09-07 09:37:32,342 - INFO - | distributed init (rank 2), gpu 2, world_size 4, dist_url env://
+2025-09-07 09:37:32,378 - INFO - | distributed init (rank 3), gpu 3, world_size 4, dist_url env://
+2025-09-07 09:37:32,382 - INFO - | distributed init (rank 1), gpu 1, world_size 4, dist_url env://
+tiger-i04g1:665341:665341 [0] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:665341:665341 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:665341:665341 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.19.3+cuda12.3
+tiger-i04g1:665344:665344 [3] NCCL INFO cudaDriverVersion 13000
+tiger-i04g1:665344:665344 [3] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:665344:665344 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:665342:665342 [1] NCCL INFO cudaDriverVersion 13000
+tiger-i04g1:665342:665342 [1] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:665342:665342 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:665343:665343 [2] NCCL INFO cudaDriverVersion 13000
+tiger-i04g1:665343:665343 [2] NCCL INFO Bootstrap : Using ib0:10.36.54.40<0>
+tiger-i04g1:665343:665343 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+tiger-i04g1:665341:665403 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:665341:665403 [0] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:665341:665403 [0] NCCL INFO Using network IB
+tiger-i04g1:665343:665406 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:665343:665406 [2] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:665343:665406 [2] NCCL INFO Using network IB
+tiger-i04g1:665344:665404 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:665344:665404 [3] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:665344:665404 [3] NCCL INFO Using network IB
+tiger-i04g1:665342:665405 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:10.36.54.40<0>
+tiger-i04g1:665342:665405 [1] NCCL INFO Using non-device net plugin version 0
+tiger-i04g1:665342:665405 [1] NCCL INFO Using network IB
+tiger-i04g1:665341:665403 [0] NCCL INFO DMA-BUF is available on GPU device 0
+tiger-i04g1:665343:665406 [2] NCCL INFO DMA-BUF is available on GPU device 2
+tiger-i04g1:665344:665404 [3] NCCL INFO DMA-BUF is available on GPU device 3
+tiger-i04g1:665342:665405 [1] NCCL INFO DMA-BUF is available on GPU device 1
+tiger-i04g1:665344:665404 [3] NCCL INFO comm 0x8f71d50 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c2000 commId 0x839b3a20453c7884 - Init START
+tiger-i04g1:665341:665403 [0] NCCL INFO comm 0x9605130 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 87000 commId 0x839b3a20453c7884 - Init START
+tiger-i04g1:665342:665405 [1] NCCL INFO comm 0x8a54150 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 90000 commId 0x839b3a20453c7884 - Init START
+tiger-i04g1:665343:665406 [2] NCCL INFO comm 0x9c51200 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId b9000 commId 0x839b3a20453c7884 - Init START
+tiger-i04g1:665341:665403 [0] NCCL INFO Setting affinity for GPU 0 to 0fffff,ff000000,00000000
+tiger-i04g1:665341:665403 [0] NCCL INFO NVLS multicast support is available on dev 0
+tiger-i04g1:665343:665406 [2] NCCL INFO Setting affinity for GPU 2 to 0fffff,ff000000,00000000
+tiger-i04g1:665343:665406 [2] NCCL INFO NVLS multicast support is available on dev 2
+tiger-i04g1:665344:665404 [3] NCCL INFO Setting affinity for GPU 3 to 0fffff,ff000000,00000000
+tiger-i04g1:665342:665405 [1] NCCL INFO Setting affinity for GPU 1 to 0fffff,ff000000,00000000
+tiger-i04g1:665344:665404 [3] NCCL INFO NVLS multicast support is available on dev 3
+tiger-i04g1:665342:665405 [1] NCCL INFO NVLS multicast support is available on dev 1
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 00/24 :    0   1   2   3
+tiger-i04g1:665344:665404 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] -1/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->2 [9] -1/-1/-1->3->2 [10] -1/-1/-1->3->2 [11] -1/-1/-1->3->2 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->2 [17] -1/-1/-1->3->2 [18] -1/-1/-1->3->2 [19] -1/-1/-1->3->2 [20] -1/-1/-1->3->2 [21] -1/-1/-1->3->2 [22] -1/-1/-1->3->2 [23] -1/-1/-1->3->2
+tiger-i04g1:665342:665405 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] 2/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 2/-1/-1->1->0 [17] 2/-1/-1->1->0 [18] 2/-1/-1->1->0 [19] 2/-1/-1->1->0 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 01/24 :    0   1   2   3
+tiger-i04g1:665344:665404 [3] NCCL INFO P2P Chunksize set to 524288
+tiger-i04g1:665343:665406 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->1 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 3/-1/-1->2->1 [9] 3/-1/-1->2->1 [10] 3/-1/-1->2->1 [11] 3/-1/-1->2->1 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 3/-1/-1->2->1 [17] 3/-1/-1->2->1 [18] 3/-1/-1->2->1 [19] 3/-1/-1->2->1 [20] 3/-1/-1->2->1 [21] 3/-1/-1->2->1 [22] 3/-1/-1->2->1 [23] 3/-1/-1->2->1
+tiger-i04g1:665342:665405 [1] NCCL INFO P2P Chunksize set to 524288
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 02/24 :    0   1   2   3
+tiger-i04g1:665343:665406 [2] NCCL INFO P2P Chunksize set to 524288
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 03/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 04/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 05/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 06/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 07/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 08/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 09/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 10/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 11/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 12/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 13/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 14/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 15/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 16/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 17/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 18/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 19/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 20/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 21/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 22/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 23/24 :    0   1   2   3
+tiger-i04g1:665341:665403 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 1/-1/-1->0->-1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 1/-1/-1->0->-1 [9] 1/-1/-1->0->-1 [10] 1/-1/-1->0->-1 [11] 1/-1/-1->0->-1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 1/-1/-1->0->-1 [17] 1/-1/-1->0->-1 [18] 1/-1/-1->0->-1 [19] 1/-1/-1->0->-1 [20] 1/-1/-1->0->-1 [21] 1/-1/-1->0->-1 [22] 1/-1/-1->0->-1 [23] 1/-1/-1->0->-1
+tiger-i04g1:665341:665403 [0] NCCL INFO P2P Chunksize set to 524288
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 01/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 07/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 12/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 13/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 15/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 12/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 16/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 13/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 14/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 18/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 08/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 09/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 19/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 16/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 18/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 21/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 19/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 22/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 20/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 12/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 14/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 15/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 22/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 14/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 15/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 16/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 18/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 20/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 21/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 20/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 21/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665341:665403 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 22/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Connected all rings
+tiger-i04g1:665342:665405 [1] NCCL INFO Connected all rings
+tiger-i04g1:665341:665403 [0] NCCL INFO Connected all rings
+tiger-i04g1:665344:665404 [3] NCCL INFO Connected all rings
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 08/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 09/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 13/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 14/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 15/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 16/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 17/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 18/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 19/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 20/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 21/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Channel 23/0 : 3[3] -> 2[2] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 10/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 13/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 15/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 16/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 17/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 19/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 21/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 22/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665343:665406 [2] NCCL INFO Channel 23/0 : 2[2] -> 1[1] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 13/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 14/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 16/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 17/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 18/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 19/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 20/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 22/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665342:665405 [1] NCCL INFO Channel 23/0 : 1[1] -> 0[0] via P2P/CUMEM
+tiger-i04g1:665344:665404 [3] NCCL INFO Connected all trees
+tiger-i04g1:665341:665403 [0] NCCL INFO Connected all trees
+tiger-i04g1:665343:665406 [2] NCCL INFO Connected all trees
+tiger-i04g1:665342:665405 [1] NCCL INFO Connected all trees
+tiger-i04g1:665344:665404 [3] NCCL INFO NVLS comm 0x8f71d50 headRank 3 nHeads 4 buffSize 4194304 memSize 2097152 nvlsPerRankSize 201326592 nvlsTotalSize 805306368
+tiger-i04g1:665342:665405 [1] NCCL INFO NVLS comm 0x8a54150 headRank 1 nHeads 4 buffSize 4194304 memSize 2097152 nvlsPerRankSize 201326592 nvlsTotalSize 805306368
+tiger-i04g1:665343:665406 [2] NCCL INFO NVLS comm 0x9c51200 headRank 2 nHeads 4 buffSize 4194304 memSize 2097152 nvlsPerRankSize 201326592 nvlsTotalSize 805306368
+tiger-i04g1:665341:665403 [0] NCCL INFO NVLS comm 0x9605130 headRank 0 nHeads 4 buffSize 4194304 memSize 2097152 nvlsPerRankSize 201326592 nvlsTotalSize 805306368
+tiger-i04g1:665342:665405 [1] NCCL INFO Connected NVLS tree
+tiger-i04g1:665341:665403 [0] NCCL INFO Connected NVLS tree
+tiger-i04g1:665342:665405 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+tiger-i04g1:665342:665405 [1] NCCL INFO 24 coll channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+tiger-i04g1:665341:665403 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+tiger-i04g1:665341:665403 [0] NCCL INFO 24 coll channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+tiger-i04g1:665343:665406 [2] NCCL INFO Connected NVLS tree
+tiger-i04g1:665343:665406 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+tiger-i04g1:665343:665406 [2] NCCL INFO 24 coll channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+tiger-i04g1:665344:665404 [3] NCCL INFO Connected NVLS tree
+tiger-i04g1:665344:665404 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+tiger-i04g1:665344:665404 [3] NCCL INFO 24 coll channels, 16 nvls channels, 32 p2p channels, 32 p2p channels per peer
+tiger-i04g1:665344:665404 [3] NCCL INFO comm 0x8f71d50 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c2000 commId 0x839b3a20453c7884 - Init COMPLETE
+tiger-i04g1:665343:665406 [2] NCCL INFO comm 0x9c51200 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId b9000 commId 0x839b3a20453c7884 - Init COMPLETE
+tiger-i04g1:665342:665405 [1] NCCL INFO comm 0x8a54150 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 90000 commId 0x839b3a20453c7884 - Init COMPLETE
+tiger-i04g1:665341:665403 [0] NCCL INFO comm 0x9605130 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 87000 commId 0x839b3a20453c7884 - Init COMPLETE
+2025-09-07 09:37:33,722 - INFO - Prognostic variables: CT_0, CT_1, CT_2, CT_3, CT_4, CT_5, CT_6, CT_7, CT_8, CT_9, CT_10, CT_11, CT_12, CT_13, CT_14, CT_15, CT_16, CT_17, CT_18, CT_19, CT_20, CT_21, CT_22, CT_23, CT_24, CT_25, CT_26, CT_27, CT_28, CT_29, CT_30, CT_31, CT_32, CT_33, CT_34, CT_35, CT_36, CT_37, CT_38, CT_39, CT_40, CT_41, CT_42, CT_43, SA_0, SA_1, SA_2, SA_3, SA_4, SA_5, SA_6, SA_7, SA_8, SA_9, SA_10, SA_11, SA_12, SA_13, SA_14, SA_15, SA_16, SA_17, SA_18, SA_19, SA_20, SA_21, SA_22, SA_23, SA_24, SA_25, SA_26, SA_27, SA_28, SA_29, SA_30, SA_31, SA_32, SA_33, SA_34, SA_35, SA_36, SA_37, SA_38, SA_39, SA_40, SA_41, SA_42, SA_43, o2_0, o2_1, o2_2, o2_3, o2_4, o2_5, o2_6, o2_7, o2_8, o2_9, o2_10, o2_11, o2_12, o2_13, o2_14, o2_15, o2_16, o2_17, o2_18, o2_19, o2_20, o2_21, o2_22, o2_23, o2_24, o2_25, o2_26, o2_27, o2_28, o2_29, o2_30, o2_31, o2_32, o2_33, o2_34, o2_35, o2_36, o2_37, o2_38, o2_39, o2_40, o2_41, o2_42, o2_43, dic_0, dic_1, dic_2, dic_3, dic_4, dic_5, dic_6, dic_7, dic_8, dic_9, dic_10, dic_11, dic_12, dic_13, dic_14, dic_15, dic_16, dic_17, dic_18, dic_19, dic_20, dic_21, dic_22, dic_23, dic_24, dic_25, dic_26, dic_27, dic_28, dic_29, dic_30, dic_31, dic_32, dic_33, dic_34, dic_35, dic_36, dic_37, dic_38, dic_39, dic_40, dic_41, dic_42, dic_43
+2025-09-07 09:37:33,723 - INFO - Boundary variables: tauuo, tauvo, Qnet
+2025-09-07 09:37:33,723 - INFO - Levels: 44
+2025-09-07 09:37:33,727 - INFO - Number of inputs: (hist + 1) * prognostic_vars + boundary_vars = 355
+2025-09-07 09:37:33,728 - INFO - Number of outputs: (hist + 1) * prognostic_vars = 352
+2025-09-07 09:37:33,728 - INFO - Loading data
+2025-09-07 09:37:35,865 - INFO - Instantiating model samudra_bgc
+[09:37:35.882705] SamudraBGC init - Wet mask shape: torch.Size([352, 270, 180])
+[09:37:35.882750] Expected spatial dims based on data: y=270, x=180
+2025-09-07 09:37:39,309 - INFO - Loss = mse
+2025-09-07 09:37:40,602 - INFO - Inference will use input at time 2024-01-01T00:00:00.000000000 and produce output at 2024-01-03T00:00:00.000000000
+2025-09-07 09:37:40,670 - INFO - Starting training at step 4
+2025-09-07 09:37:49,229 - INFO - Instantiating torch loaders
+2025-09-07 09:44:45,360 - INFO - Training Epoch: [0]  [  0/318]  eta: 1 day, 12:45:28  lr: 0.000200  loss: 4.9349 (4.9349)  time: 416.129(416.129)  data: 342.573(342.573)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:44:47,686 - INFO - Training Epoch: [0]  [  1/318]  eta: 18:25:23  lr: 0.000200  loss: 4.9349 (6.1800)  time: 2.316(2.316)  data: 0.005(0.005)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:44:49,899 - INFO - Training Epoch: [0]  [  2/318]  eta: 12:18:28  lr: 0.000200  loss: 7.4251 (12.2310)  time: 2.205(2.205)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:44:52,006 - INFO - Training Epoch: [0]  [  3/318]  eta: 9:14:51  lr: 0.000200  loss: 7.4251 (11.2053)  time: 2.106(2.106)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:44:54,232 - INFO - Training Epoch: [0]  [  4/318]  eta: 7:24:48  lr: 0.000200  loss: 7.4251 (10.0136)  time: 2.224(2.224)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:09,375 - INFO - Training Epoch: [0]  [  5/318]  eta: 6:22:39  lr: 0.000200  loss: 5.2464 (8.8233)  time: 15.142(15.142)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:11,668 - INFO - Training Epoch: [0]  [  6/318]  eta: 5:28:38  lr: 0.000200  loss: 5.2464 (7.9247)  time: 2.273(2.273)  data: 0.006(0.006)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:13,754 - INFO - Training Epoch: [0]  [  7/318]  eta: 4:47:59  lr: 0.000200  loss: 4.9349 (7.2603)  time: 2.084(2.084)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:15,804 - INFO - Training Epoch: [0]  [  8/318]  eta: 4:16:20  lr: 0.000200  loss: 4.9349 (6.6000)  time: 2.049(2.049)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:23,647 - INFO - Training Epoch: [0]  [  9/318]  eta: 3:53:59  lr: 0.000200  loss: 2.8717 (6.0561)  time: 7.833(7.833)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:50,330 - INFO - Training Epoch: [0]  [ 10/318]  eta: 3:44:29  lr: 0.000200  loss: 2.8717 (5.6060)  time: 26.680(26.680)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:52,212 - INFO - Training Epoch: [0]  [ 11/318]  eta: 3:25:54  lr: 0.000200  loss: 2.6098 (5.2280)  time: 1.881(1.881)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:54,428 - INFO - Training Epoch: [0]  [ 12/318]  eta: 3:10:10  lr: 0.000200  loss: 2.6098 (4.8992)  time: 1.836(1.836)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:56,662 - INFO - Training Epoch: [0]  [ 13/318]  eta: 2:56:40  lr: 0.000200  loss: 2.5331 (4.6264)  time: 1.841(1.841)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:45:58,541 - INFO - Training Epoch: [0]  [ 14/318]  eta: 2:44:59  lr: 0.000200  loss: 2.5331 (4.3709)  time: 1.879(1.879)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:46:00,420 - INFO - Training Epoch: [0]  [ 15/318]  eta: 2:34:46  lr: 0.000200  loss: 1.3178 (4.1401)  time: 1.878(1.878)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:50:52,681 - INFO - Training Epoch: [0]  [ 16/318]  eta: 3:51:42  lr: 0.000200  loss: 1.3178 (3.9337)  time: 292.260(292.260)  data: 290.175(290.175)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:51:02,560 - INFO - Training Epoch: [0]  [ 17/318]  eta: 3:40:52  lr: 0.000200  loss: 1.1606 (3.7470)  time: 9.872(9.872)  data: 0.157(0.157)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:51:04,723 - INFO - Training Epoch: [0]  [ 18/318]  eta: 3:29:07  lr: 0.000200  loss: 1.1606 (3.5752)  time: 2.161(2.161)  data: 0.001(0.001)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:51:06,863 - INFO - Training Epoch: [0]  [ 19/318]  eta: 3:18:32  lr: 0.000200  loss: 1.1058 (3.4299)  time: 2.139(2.139)  data: 0.001(0.001)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:51:09,002 - INFO - Training Epoch: [0]  [ 20/318]  eta: 3:08:57  lr: 0.000200  loss: 1.0804 (3.2903)  time: 2.138(2.138)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:52:10,450 - INFO - Training Epoch: [0]  [ 21/318]  eta: 3:13:35  lr: 0.000200  loss: 1.0696 (3.1634)  time: 61.446(61.446)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:52:12,528 - INFO - Training Epoch: [0]  [ 22/318]  eta: 3:04:59  lr: 0.000200  loss: 0.9533 (3.0526)  time: 2.076(2.076)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:52:14,654 - INFO - Training Epoch: [0]  [ 23/318]  eta: 2:57:07  lr: 0.000200  loss: 0.7930 (2.9469)  time: 2.124(2.124)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:52:16,777 - INFO - Training Epoch: [0]  [ 24/318]  eta: 2:49:52  lr: 0.000200  loss: 0.6787 (2.8500)  time: 2.122(2.122)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:15,426 - INFO - Training Epoch: [0]  [ 25/318]  eta: 2:53:47  lr: 0.000200  loss: 0.6706 (2.7626)  time: 58.648(58.648)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:17,561 - INFO - Training Epoch: [0]  [ 26/318]  eta: 2:47:10  lr: 0.000200  loss: 0.6317 (2.6800)  time: 2.133(2.133)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:19,681 - INFO - Training Epoch: [0]  [ 27/318]  eta: 2:41:01  lr: 0.000200  loss: 0.6148 (2.6020)  time: 2.119(2.119)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:21,830 - INFO - Training Epoch: [0]  [ 28/318]  eta: 2:35:17  lr: 0.000200  loss: 0.5773 (2.5318)  time: 2.148(2.148)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:23,991 - INFO - Training Epoch: [0]  [ 29/318]  eta: 2:29:56  lr: 0.000200  loss: 0.5730 (2.4621)  time: 2.160(2.160)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:26,232 - INFO - Training Epoch: [0]  [ 30/318]  eta: 2:24:57  lr: 0.000200  loss: 0.5641 (2.4000)  time: 2.238(2.238)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:53:28,357 - INFO - Training Epoch: [0]  [ 31/318]  eta: 2:20:15  lr: 0.000200  loss: 0.5641 (2.3453)  time: 2.123(2.123)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:57:11,774 - INFO - Training Epoch: [0]  [ 32/318]  eta: 2:47:47  lr: 0.000200  loss: 0.5641 (2.2927)  time: 223.416(223.416)  data: 190.733(190.733)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:03,707 - INFO - Training Epoch: [0]  [ 33/318]  eta: 2:49:32  lr: 0.000200  loss: 0.5377 (2.2385)  time: 51.928(51.928)  data: 28.655(28.655)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:05,829 - INFO - Training Epoch: [0]  [ 34/318]  eta: 2:44:24  lr: 0.000200  loss: 0.5319 (2.1857)  time: 2.103(2.103)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:08,097 - INFO - Training Epoch: [0]  [ 35/318]  eta: 2:39:34  lr: 0.000200  loss: 0.5240 (2.1361)  time: 2.260(2.260)  data: 0.001(0.001)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:10,290 - INFO - Training Epoch: [0]  [ 36/318]  eta: 2:34:59  lr: 0.000200  loss: 0.5161 (2.0884)  time: 2.182(2.182)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:12,345 - INFO - Training Epoch: [0]  [ 37/318]  eta: 2:30:37  lr: 0.000200  loss: 0.4982 (2.0430)  time: 2.054(2.054)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:14,440 - INFO - Training Epoch: [0]  [ 38/318]  eta: 2:26:29  lr: 0.000200  loss: 0.4982 (2.0004)  time: 2.093(2.093)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:32,340 - INFO - Training Epoch: [0]  [ 39/318]  eta: 2:24:24  lr: 0.000200  loss: 0.4980 (1.9579)  time: 17.898(17.898)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 09:58:34,454 - INFO - Training Epoch: [0]  [ 40/318]  eta: 2:20:37  lr: 0.000200  loss: 0.4977 (1.9178)  time: 2.109(2.109)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:29,737 - INFO - Training Epoch: [0]  [ 41/318]  eta: 2:29:26  lr: 0.000200  loss: 0.4870 (1.8837)  time: 115.281(115.281)  data: 0.001(0.001)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:31,810 - INFO - Training Epoch: [0]  [ 42/318]  eta: 2:25:39  lr: 0.000200  loss: 0.4514 (1.8476)  time: 2.069(2.069)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:34,190 - INFO - Training Epoch: [0]  [ 43/318]  eta: 2:22:05  lr: 0.000200  loss: 0.4410 (1.8138)  time: 2.379(2.379)  data: 0.013(0.013)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:37,619 - INFO - Training Epoch: [0]  [ 44/318]  eta: 2:18:46  lr: 0.000200  loss: 0.4167 (1.7827)  time: 3.428(3.428)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:39,699 - INFO - Training Epoch: [0]  [ 45/318]  eta: 2:15:27  lr: 0.000200  loss: 0.4017 (1.7508)  time: 2.079(2.079)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:41,827 - INFO - Training Epoch: [0]  [ 46/318]  eta: 2:12:18  lr: 0.000200  loss: 0.4002 (1.7220)  time: 2.127(2.127)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:00:44,380 - INFO - Training Epoch: [0]  [ 47/318]  eta: 2:09:18  lr: 0.000200  loss: 0.3893 (1.6936)  time: 2.552(2.552)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:04:20,165 - INFO - Training Epoch: [0]  [ 48/318]  eta: 2:26:00  lr: 0.000200  loss: 0.3801 (1.6652)  time: 215.715(215.715)  data: 211.513(211.513)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:05:25,122 - INFO - Training Epoch: [0]  [ 49/318]  eta: 2:28:23  lr: 0.000200  loss: 0.3715 (1.6377)  time: 64.951(64.951)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:05:27,306 - INFO - Training Epoch: [0]  [ 50/318]  eta: 2:25:07  lr: 0.000200  loss: 0.3715 (1.6136)  time: 2.175(2.175)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:05:29,788 - INFO - Training Epoch: [0]  [ 51/318]  eta: 2:22:01  lr: 0.000200  loss: 0.3630 (1.5884)  time: 2.481(2.481)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:05:31,985 - INFO - Training Epoch: [0]  [ 52/318]  eta: 2:19:00  lr: 0.000200  loss: 0.3630 (1.5656)  time: 2.196(2.196)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:05:34,180 - INFO - Training Epoch: [0]  [ 53/318]  eta: 2:16:05  lr: 0.000200  loss: 0.3630 (1.5435)  time: 2.193(2.193)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:06:36,593 - INFO - Training Epoch: [0]  [ 54/318]  eta: 2:18:06  lr: 0.000200  loss: 0.3616 (1.5208)  time: 62.412(62.412)  data: 0.013(0.013)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:06:38,699 - INFO - Training Epoch: [0]  [ 55/318]  eta: 2:15:17  lr: 0.000200  loss: 0.3616 (1.5016)  time: 2.098(2.098)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:06:40,786 - INFO - Training Epoch: [0]  [ 56/318]  eta: 2:12:34  lr: 0.000200  loss: 0.3564 (1.4804)  time: 2.080(2.080)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:04,916 - INFO - Training Epoch: [0]  [ 57/318]  eta: 2:11:35  lr: 0.000200  loss: 0.3293 (1.4592)  time: 24.129(24.129)  data: 0.013(0.013)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:07,002 - INFO - Training Epoch: [0]  [ 58/318]  eta: 2:09:01  lr: 0.000200  loss: 0.3293 (1.4431)  time: 2.079(2.079)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:09,219 - INFO - Training Epoch: [0]  [ 59/318]  eta: 2:06:32  lr: 0.000200  loss: 0.3492 (1.4248)  time: 2.215(2.215)  data: 0.013(0.013)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:11,352 - INFO - Training Epoch: [0]  [ 60/318]  eta: 2:04:08  lr: 0.000200  loss: 0.3492 (1.4070)  time: 2.128(2.128)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:13,619 - INFO - Training Epoch: [0]  [ 61/318]  eta: 2:01:49  lr: 0.000200  loss: 0.3362 (1.3889)  time: 2.266(2.266)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:16,052 - INFO - Training Epoch: [0]  [ 62/318]  eta: 1:59:35  lr: 0.000200  loss: 0.3362 (1.3707)  time: 2.432(2.432)  data: 0.013(0.013)  max cpu mem: 4313  max gpu mem: 136476
+2025-09-07 10:07:18,293 - INFO - Training Epoch: [0]  [ 63/318]  eta: 1:57:24  lr: 0.000200  loss: 0.3362 (1.3549)  time: 2.240(2.240)  data: 0.000(0.000)  max cpu mem: 4313  max gpu mem: 136476

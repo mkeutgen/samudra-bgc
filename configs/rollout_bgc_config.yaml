@@ -1,0 +1,52 @@
+debug: false
+save_zarr: true
+disk_mode: true
+
+# Inference time range for rollout
+inference:
+  start_time: "2025-01-01"  # Year 9
+  end_time: "2025-12-31"
+
+ckpt_path: /path/to/checkpoint.pt  # UPDATE THIS
+num_model_steps_forward: 50  # Number of steps per forward pass
+record_every: 10  # Write to zarr every 10 steps
+
+experiment:
+  name: rollout
+  sub_name: bgc_samudra_mini
+  rand_seed: 42
+  base_output_dir: rollout_bgc
+  data_dir: /path/to/processed/data  # UPDATE THIS
+  network: samudra
+  prognostic_vars_key: phys_bgc  # Same as training
+  boundary_vars_key: surface_forcing
+
+data:
+  data_path: bgc_data.zarr
+  data_means_path: bgc_means.zarr
+  data_stds_path: bgc_stds.zarr
+  time_delta: 1  # Daily data
+  num_workers: 4
+  hist: 0
+
+unet:
+  ch_width: [304, 400, 500, 600, 800]
+  n_out: 200  # 50 levels × 4 variables (CT, SA, o2, dic)
+  dilation: [1, 2, 4, 8]
+  n_layers: [1, 1, 1, 1]  # Change from [2, 2, 2, 2] to [1, 1, 1, 1]
+
+  last_kernel_size: 3
+  pad: "replicate"
+
+  core_block:
+    block_type: "conv_next_block"
+    kernel_size: 3
+    activation: "capped_gelu"
+    upscale_factor: 4
+    norm: "batch"
+
+  down_sampling_block: "avg_pool"
+  up_sampling_block: "bilinear_upsample"
+  
+  corrector:
+    non_negative_corrector_names: ["o2", "dic", "chl", "pp"]

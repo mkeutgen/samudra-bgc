@@ -1,0 +1,82 @@
+[rank1]:[E ProcessGroupNCCL.cpp:523] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=83, OpType=_ALLGATHER_BASE, NumelIn=5121, NumelOut=20484, Timeout(ms)=600000) ran for 600591 milliseconds before timing out.
+[rank2]:[E ProcessGroupNCCL.cpp:523] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=69, OpType=_ALLGATHER_BASE, NumelIn=2841, NumelOut=11364, Timeout(ms)=600000) ran for 604194 milliseconds before timing out.
+[rank3]:[E ProcessGroupNCCL.cpp:523] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=71, OpType=_ALLGATHER_BASE, NumelIn=4097, NumelOut=16388, Timeout(ms)=600000) ran for 603991 milliseconds before timing out.
+[rank2]:[E ProcessGroupNCCL.cpp:537] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank2]:[E ProcessGroupNCCL.cpp:543] To avoid data inconsistency, we are taking the entire process down.
+[rank2]:[E ProcessGroupNCCL.cpp:1182] [Rank 2] NCCL watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=69, OpType=_ALLGATHER_BASE, NumelIn=2841, NumelOut=11364, Timeout(ms)=600000) ran for 604194 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:525 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x152862d47d87 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1e6 (0x152863eef6e6 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::workCleanupLoop() + 0x19d (0x152863ef2c3d in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x119 (0x152863ef3839 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x1528adc13bf4 in /home/mk0964/.conda/envs/samudra/bin/../lib/libstdc++.so.6)
+frame #5: <unknown function> + 0x8a19a (0x1528af68a19a in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10f240 (0x1528af70f240 in /lib64/libc.so.6)
+
+[rank1]:[E ProcessGroupNCCL.cpp:537] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E ProcessGroupNCCL.cpp:543] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E ProcessGroupNCCL.cpp:1182] [Rank 1] NCCL watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=83, OpType=_ALLGATHER_BASE, NumelIn=5121, NumelOut=20484, Timeout(ms)=600000) ran for 600591 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:525 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x14aacfdc0d87 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1e6 (0x14aad0f686e6 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::workCleanupLoop() + 0x19d (0x14aad0f6bc3d in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x119 (0x14aad0f6c839 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x14ab1ac8cbf4 in /home/mk0964/.conda/envs/samudra/bin/../lib/libstdc++.so.6)
+frame #5: <unknown function> + 0x8a19a (0x14ab1c68a19a in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10f240 (0x14ab1c70f240 in /lib64/libc.so.6)
+
+[rank3]:[E ProcessGroupNCCL.cpp:537] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E ProcessGroupNCCL.cpp:543] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E ProcessGroupNCCL.cpp:1182] [Rank 3] NCCL watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=71, OpType=_ALLGATHER_BASE, NumelIn=4097, NumelOut=16388, Timeout(ms)=600000) ran for 603991 milliseconds before timing out.
+Exception raised from checkTimeout at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:525 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x14b91736bd87 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1e6 (0x14b9185136e6 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::workCleanupLoop() + 0x19d (0x14b918516c3d in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x119 (0x14b918517839 in /home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x14b962237bf4 in /home/mk0964/.conda/envs/samudra/bin/../lib/libstdc++.so.6)
+frame #5: <unknown function> + 0x8a19a (0x14b963c8a19a in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x10f240 (0x14b963d0f240 in /lib64/libc.so.6)
+
+[2025-09-06 23:58:23,382] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: -6) local_rank: 1 (pid: 509044) of binary: /home/mk0964/.conda/envs/samudra/bin/python
+Traceback (most recent call last):
+  File "/home/mk0964/.conda/envs/samudra/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/mk0964/.conda/envs/samudra/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=======================================================
+src/train.py FAILED
+-------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-09-06_23:58:23
+  host      : tiger-i04g1
+  rank      : 2 (local_rank: 2)
+  exitcode  : -6 (pid: 509046)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 509046
+[2]:
+  time      : 2025-09-06_23:58:23
+  host      : tiger-i04g1
+  rank      : 3 (local_rank: 3)
+  exitcode  : -6 (pid: 509047)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 509047
+-------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-09-06_23:58:23
+  host      : tiger-i04g1
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 509044)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 509044
+=======================================================
